@@ -1,0 +1,29 @@
+{
+  "LeaveDetail": {
+    "emp": {
+      "id": "emp",
+      "label": "Emp Id",
+      "value": ""
+    },
+    "leaveDays": {
+      "id": "leaveDays",
+      "label": "Required Days",
+      "value": ""
+    },
+    "reason": {
+      "id": "reason",
+      "label": "Reason",
+      "value": ""
+    },
+    "showButton": {
+      "id": "showButton",
+      "label": "Show",
+      "value": ""
+    },
+    "applyButton": {
+      "id": "applyButton",
+      "label": "Apply",
+      "value": ""
+    }
+  }
+}
