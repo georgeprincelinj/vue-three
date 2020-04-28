@@ -11,11 +11,7 @@
       />
     </FwRow>
     <FwRow>
-      <FwInput
-        ref="reasonInstance"
-        v-bind="map.reason"
-        v-on:fw_input="fw_input_reason_change"
-      />
+      <FwInput ref="reasonInstance" v-bind="map.reason" v-on:fw_input="fw_input_reason_change" />
     </FwRow>
     <FwRow>
       <FwButton v-bind="map.showButton" v-on:fw_click="fw_click_show" />
@@ -43,16 +39,15 @@ export default {
     FwButton,
     FwInput,
     FwRow,
-    FwList,
+    FwList
   },
 
   setup() {
-    const { map, getServiceId } = BaseApp("LeaveDetail");
+    // const { map, getServiceId } = BaseApp("LeaveDetail");
     const resultData = ref([]);
     return {
-      map,
-      getServiceId,
-      resultData,
+      ...BaseApp("LeaveDetail"),
+      resultData
     };
   },
 
@@ -92,8 +87,8 @@ export default {
         this.$refs.leaveDaysInstance.setDisplayed(true);
         this.$refs.reasonInstance.setDisplayed(true);
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
